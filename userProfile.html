@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<section>
+
+    <div class="row" style="background-color: #eee;">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+                 class="rounded-circle img-fluid" style="width: 140px;">
+            <h5 class="my-3"><span id="nameField"></span></h5>
+            <div class="d-flex justify-content-center mb-2">
+              <a href="edit.html" type="button" class="btn btn-primary">Редагувати</a>
+              <button id="leaveFamily" type="button" class="btn btn-outline-primary ms-1">Покинути Сім'ю</button>
+            </div>
+            <a href="familyProfile.html" id="showFamily" class="btn btn-primary">Переглянути Сім'ю</a>
+            <a href="families.html" class="btn btn-primary">Переглянути сім'ї</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><span id="fullName"></span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><span id="email"></span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><span id="phoneNumber"></span></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Address</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><span id="address"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div style="height: 300px; overflow-y: auto; text-align: center;">
+    <div class="table-responsive">
+      <table id="shoppingTable" class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>№</th>
+            <th>Назва товару</th>
+            <th>Ціна</th>
+            <th>Дата покупки</th>
+            <th>Дії</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <canvas id="myChart"></canvas>
+  </div>
+
+</section>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts/userScripts/UserProfileScript.js"></script>
+</body>
+</html>

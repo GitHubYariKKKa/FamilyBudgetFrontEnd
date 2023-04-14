@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<section class="vh-100 bg-image">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+                            <form>
+
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="name" class="form-control form-control-lg" />
+                                    <label class="form-label" for="name">Ім'я</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="surName" class="form-control form-control-lg" />
+                                    <label class="form-label" for="surName">Прізвище</label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="lastName" class="form-control form-control-lg" />
+                                    <label class="form-label" for="lastName">По-батькові</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="email" class="form-control form-control-lg" />
+                                    <label class="form-label" for="email">Email</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="phoneNumber" class="form-control form-control-lg" />
+                                    <label class="form-label" for="phoneNumber">Номер телефону</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="postalIndex" class="form-control form-control-lg" />
+                                    <label class="form-label" for="postalIndex">Поштовий Індекс</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="address" class="form-control form-control-lg" />
+                                    <label class="form-label" for="address">Адреса</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="password" class="form-control form-control-lg" />
+                                    <label class="form-label" for="password">Password</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="repeatedPassword" class="form-control form-control-lg" />
+                                    <label class="form-label" for="repeatedPassword">Repeat your password</label>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button id="registrationButton" type="button"
+                                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                                </div>
+
+                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
+                                                                                                        class="fw-bold text-body"><u>Login here</u></a></p>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="scripts/userScripts/createUserScript.js"></script>
+</body>
+</html>
